@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.imnu.ciec.rtest4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NormalActivity" ></activity>
+        <activity android:name=".DialogActivity"
+
+            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+        <!-- 这里的theme是定义这个activity 为对话框   android:theme="@android:style/Theme.Dialog" 说是这个是错误的  现在上面是正确的-->
+    </application>
+
+</manifest>
